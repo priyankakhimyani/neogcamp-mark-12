@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap" rel="stylesheet">
+     <!-- font awesome -->
+     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- CSS File -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">Fun With Triangles</div>
+        <a href="index.html">Is Triangle?</a>
+        <a href="quiz.html">Triangle Quiz</a>
+        <a href="hypotenuse.html">Hypotenuse</a>
+        <a href="area.html">Area</a>
+    </nav>
+
+    <h1>Calculate Hypotenuse</h1>
+    <label>A = </label>
+    <input class="side-input" type="number" min=0 oninput="validity.valid||(value='');" />
+    <label>B = </label>
+    <input class="side-input" type="number" min=0 oninput="validity.valid||(value='');" />
+    
+    <button id="hypotenuse-btn">Calculate Hypotenuse</button>
+    <div id="output"></div>
+    
+<!-- JS File -->
+<script src="hypotenuse.js"></script>
+</body>
+</html>
